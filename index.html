@@ -50,19 +50,24 @@
 </head>
 <body>
   <div class="container">
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="somya.jpg" alt="Somya Pathak" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
     <h1>Somya Pathak</h1>
     <p class="tagline">AI/ML | Data Science | Software Engineering</p>
-    <div class="contact">
-      <p>📍 Boulder, CO &nbsp;|&nbsp; 📧 <a href="mailto:somyapathak2910@gmail.com">somyapathak2910@gmail.com</a> &nbsp;|&nbsp; 📞 +1 720-936-7780 &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/somyapathak" target="_blank">LinkedIn</a></p>
-    </div>
+  </div>
+
+  <div class="contact">
+    <p>📍 Boulder, CO &nbsp;|&nbsp; 📧 <a href="mailto:somyapathak2910@gmail.com">somyapathak2910@gmail.com</a> &nbsp;|&nbsp; 📞 +1 720-936-7780 &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/somyapathak" target="_blank">LinkedIn</a></p>
+  </div>
+</div>
 
     <div class="section">
       <h2>Education</h2>
       <ul>
 <!--         <li><strong>University of Colorado Boulder</strong> – MS in Computer Science (4.0 GPA), Aug 2024 – May 2026</li>
         <li><strong>Cummins College of Engineering, Pune University</strong> – BTech in Computer Science (3.56 GPA), Aug 2017 – Jul 2021</li> -->
-          <li><strong>University of Colorado Boulder</strong> – MS in Computer Science (4.0 GPA), Aug 2024 – May 2026<br><em>Courses:</em> Machine Learning, Natural Language Processing, Deep Learning and Neural Networks, Linear Programming, Database Systems</li>
-        <li><strong>Cummins College of Engineering, Pune University</strong> – BTech in Computer Science (3.56 GPA), Aug 2017 – Jul 2021<br><em>Courses:</em> Data Structures and Algorithms, Database Management Systems, Artificial Intelligence and Machine Learning, Data Mining and Data Warehouse, Discrete Mathematics, Operating Systems, Design and Analysis of Algorithms, Cloud Computing, Internet of Things, Java Full Stack Technologies, Network and Information Security</li>
+          <li><strong>University of Colorado Boulder</strong> – Master of Science in Computer Science (4.0 GPA), Aug 2024 – May 2026<br><em>Courses:</em> Machine Learning, Natural Language Processing, Deep Learning and Neural Networks, Linear Programming, Database Systems</li>
+        <li><strong>Cummins College of Engineering, Pune University</strong> – Bachelor of Technology in Computer Science (3.56 GPA), Aug 2017 – Jul 2021<br><em>Courses:</em> Data Structures and Algorithms, Database Management Systems, Artificial Intelligence and Machine Learning, Data Mining and Data Warehouse, Discrete Mathematics, Operating Systems, Design and Analysis of Algorithms, Cloud Computing, Internet of Things, Java Full Stack Technologies, Network and Information Security</li>
       </ul>
     </div>
 
@@ -136,15 +141,35 @@
     <div class="section">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Privacy-Aware Interview Evaluation</strong> – Transformer-based classification using GPT2-XL and BERT with prompt engineering to detect explanation levels, incorporating privacy techniques.</li>
-        <li><strong>Multi-Modal VQA System</strong> – Combined NLP + CV using VizWiz dataset to build a visual question answering model, achieved above-baseline performance and 1st in class competition.</li>
+        <!--         <li><strong>Multi-Modal VQA System</strong> – Combined NLP + CV using VizWiz dataset to build a visual question answering model, achieved above-baseline performance and 1st in class competition.</li> -->
+    <li><strong>Multi-Modal VQA System</strong><br>
+  <em>1st Place Winner – Multimodal Answer Prediction Challenge (142 submissions)</em>
+  <ul>
+    <li>Developed a Deep Multi-Modal Answer Generator to solve a Visual Question Answering (VQA) task using the <strong>VizWiz dataset</strong> of over 20,000 real-world image-question pairs.</li>
+    <li>Designed a hybrid model architecture integrating <strong>CNNs</strong> for visual feature extraction, <strong>BiLSTM</strong> for natural language understanding, a <strong>Fusion & Self-Attention mechanism</strong> for contextual learning, and an <strong>LSTM Decoder</strong> for generating human-like answers.</li>
+    <li>Achieved <strong>high human-aligned accuracy</strong> on a hidden test set of 100 samples, outperforming 141 other teams in the “Answer Prediction with Text Only” track.</li>
+    <li>This work showcases the potential of <strong>multimodal AI</strong> and its applications in real-world assistive technologies, accessibility tools, and human-AI interaction.</li>
+  </ul>
+</li>
+<!--         <li><strong>Privacy-Aware Interview Evaluation</strong> – Transformer-based classification using GPT2-XL and BERT with prompt engineering to detect explanation levels, incorporating privacy techniques.</li> -->
+<li><strong>Privacy-Aware Interview Evaluation</strong><br>
+  <em>Transformer-based NLP project for evaluating interview response quality with speaker de-biasing</em>
+  <ul>
+    <li>Developed a classification system using <strong>GPT2-XL</strong> and <strong>BERT</strong> to evaluate the degree of explanation in job interview responses, categorized as <em>under-explained</em>, <em>succinct</em>, <em>comprehensive</em>, or <em>over-explained</em>.</li>
+    <li>Utilized the <strong>VetTrain dataset</strong> consisting of 38 participant transcripts and over 200 labeled question-answer pairs; combined features like tokenized text, response time, TF-IDF scores, and sentiment analysis (VADER).</li>
+    <li>Implemented prompt-based learning and few-shot tuning on transformers to enhance classification accuracy and enable reasoning-based output generation.</li>
+    <li>Applied privacy-enhancing methods to reduce <strong>speaker identity bias</strong> by removing identity-indicative features and comparing model generalization across multiple speakers.</li>
+    <li>Benchmarked transformer results against traditional ML models (Random Forests, Decision Trees) and deep neural networks, finding higher interpretability and flexibility in transformer-based outputs.</li>
+    <li>Key takeaways included managing class imbalance, improving fairness in NLP, and highlighting real-world applications for AI-based communication training tools.</li>
+  </ul>
+</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Awards & Recognition</h2>
       <ul>
-        <li>Goldman Sachs We-Tech Fellow (2019)</li>
+        <li>Goldman-Sachs We-Tech Scholarship and Mentorship for outstanding fellow in ICT field, (2019)</li>
         <li>IBM Hackathon (Runner-up, Climate Change Challenge 2020)</li>
       </ul>
     </div>
@@ -153,6 +178,14 @@
       <h2>Let's Connect</h2>
       <p>I’m always open to opportunities where I can use data and machine learning to solve real-world problems. If my work resonates with your team or you’d like to collaborate, feel free to reach out!</p>
     </div>
+    <div style="text-align: center; margin-top: 20px;">
+  <a href="somya-pathak-resume.pdf" download>
+    <button style="padding: 10px 20px; font-size: 16px; background-color: #0077cc; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      📄 Download Resume
+    </button>
+  </a>
+</div>
+
   </div>
 </body>
 </html>
